@@ -93,7 +93,7 @@ class player:
         j1 = int(j1s)
         j2 = int(j2s)
         i2 = int(i2s)
-        if ((i2<i1-1 or i2>i1+1) and(j2<j1-1 or j2>j1+1)or (b.arr[j1-1][i1-1] != self.playercharacter )or(b.arr[j2-1][i2-1] != b.empt )or (i1 < 1 or i2 < 1 or j1 <1 or j2 <1 or i1 < 1 or i2 < 1 or j1 >b.size or i1 >b.size or i2 >b.size or j1 >b.size or j2 >b.size or i1 >b.size or i2 >b.size or j1 >b.size )):
+        if ((i2<i1-1 or i2>i1+1) or (j2<j1-1 or j2>j1+1)or (b.arr[j1-1][i1-1] != self.playercharacter )or(b.arr[j2-1][i2-1] != b.empt )or (i1 < 1 or i2 < 1 or j1 <1 or j2 <1 or i1 < 1 or i2 < 1 or j1 >b.size or i1 >b.size or i2 >b.size or j1 >b.size or j2 >b.size or i1 >b.size or i2 >b.size or j1 >b.size )):
             return "err"
         else :
             b.kill(int(i1),int(j1))
